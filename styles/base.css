@@ -53,6 +53,7 @@ main {
 main h1 {
     font-family: var(--heading-font);
     font-size: 19px;
+    margin-block: 0.67em;
     text-align: center;
     padding-top: 10px;
 }
