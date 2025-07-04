@@ -31,6 +31,10 @@ header nav a {
     font-size: large;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 .navigation {
     display: flex;
     flex-wrap: wrap;
@@ -146,4 +150,5 @@ footer {
 
 footer p {
     text-align: center;
+    line-height: 35px;
 }
