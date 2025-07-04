@@ -1,17 +1,14 @@
 :root {
-    --heading-font: cabin, sans-serif;
-}
+    --heading-font: cabin, sans-serif; }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    box-sizing: border-box; }
 
-body,
-main {
+body, main {
     display: grid;
-    grid-template: auto 1fr auto / auto 1fr auto;
+    grid-template: auto 1fr auto / auto 1fr auto; 
 }
 
 header {
@@ -27,15 +24,6 @@ header span {
     font-family: var(--heading-font);
 }
 
-.navigation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    grid-column: 1 / 4;
-    background-color: rgb(190, 217, 204);
-    padding: 1rem;
-}
-
 header nav a {
     font-family: var(--heading-font);
     text-decoration: none;
@@ -43,14 +31,13 @@ header nav a {
     font-size: large;
 }
 
-footer {
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     grid-column: 1 / 4;
-    padding: 10px;
-    border-top: .09rem solid black;
-}
-
-footer p {
-    text-align: center;
+    background-color: rgb(190, 217, 204);
+    padding: 1rem;
 }
 
 main {
@@ -66,61 +53,12 @@ main h1 {
     padding-top: 10px;
 }
 
-.card {
-    padding: 1rem;
-    font-family: var(--heading-font);
-}
-
-.card h2 {
-    text-align: center;
-    padding-left: .5rem;
-    font-size: 1.5rem;
-    border-bottom: 0.1rem solid rgb(0, 0, 0);
-}
-
 .main-content {
     background-color: rgb(97, 136, 123);
     grid-column: 1 / 3;
     border-radius: 0.5rem;
     margin: 10px;
     max-width: 700px;
-}
-
-.aside-content {
-    background-color: rgb(190, 217, 204);
-    grid-column: 3 / 4;
-    border-radius: 0.5rem;
-    margin: 10px;
-}
-
-.card h4 {
-    font-size: 1.5rem;
-    margin-right: 200px;
-    border-bottom: 0.1rem solid rgb(0, 0, 0);
-}
-
-.aside-content ul {
-    padding: 1rem;
-}
-
-.aside-content a {
-    font-family: var(--heading-font);
-    text-decoration: none;
-    font-size: 1.0rem;
-    color: black;
-}
-
-.profile {
-    float: right;
-    border: 1px solid;
-    box-shadow: 0 0 30px rgb(43, 64, 45);
-    margin: 15px;
-}
-
-.card p {
-    padding: 2rem;
-    font-family: var(--heading-font);
-    line-height: 30px;
 }
 
 .main-content h3 {
@@ -130,6 +68,30 @@ main h1 {
     margin-left: 180px;
     margin-top: 77px;
 
+}
+
+.profile {
+    float: right;
+    border: 1px solid;
+    box-shadow: 0 0 30px rgb(43, 64, 45);
+    margin: 15px;
+}
+
+.card {
+    padding: 1rem;
+    font-family: var(--heading-font);
+}
+
+.about {
+    text-align: center;
+    padding-left: .5rem;
+    font-size: 1.5rem;
+    border-bottom: 0.1rem solid rgb(0, 0, 0);
+}
+.card p {
+    padding: 2rem;
+    font-family: var(--heading-font);
+    line-height: 30px;
 }
 
 figcaption {
@@ -149,4 +111,39 @@ figure img {
     display: flex;
     flex-direction: row-reverse;
     line-height: 30px;
+}
+
+.aside-content {
+    background-color: rgb(190, 217, 204);
+    grid-column: 3 / 4;
+    border-radius: 0.5rem;
+    margin: 10px;
+}
+
+.aside-content ul {
+    padding: 1rem;
+}
+
+.aside-content a {
+    font-family: var(--heading-font);
+    text-decoration: none;
+    font-size: 1.0rem;
+    color: black;
+    line-height: 35px;
+}
+
+.web {
+    font-size: 1.5rem;
+    margin-right: 200px;
+    border-bottom: 0.1rem solid rgb(0, 0, 0);
+}
+
+footer {
+    grid-column: 1 / 4;
+    padding: 10px;
+    border-top: .09rem solid black;
+}
+
+footer p {
+    text-align: center;
 }
