@@ -1,0 +1,68 @@
+:root {
+    --heading-font: 'Limelight', serif;
+    --body-font: 'DM Serif Text', serif;
+    --primary-color: rgb(37, 63, 54);
+    --secondary-color: rgb(190, 217, 204);
+}
+
+main{
+    max-width: 800px;
+    margin: 1rem auto; /* Center the content */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+header p{
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+nav {
+    font-family: var(--body-font);
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(25, 45, 230);
+}
+
+main h1 {
+    font-family: var(--body-font);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;}
+
+figcaption{
+    font-family: var(--body-font);
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-family: var(--body-font);
+    background-color: var(--primary-color);
+    color: white;
+    padding: .5rem;
+}
