@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+
+        li button {
+            font-size: 12px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>My shopping list</h1>
+    <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button>Add item</button>
+    </div>
+    <ul>
+    </ul>
+    <script>
+        const input = document.querySelector('input[name="item"]'); // Select the input element
+        const button = document.querySelector('button'); // Select the button element
+        const list = document.querySelector('ul'); // Select the unordered list element
+
+
+        button.addEventListener('click', () => {  // Add an event listener to the button
+        const myItem = input.value; // Get the value from the input field
+        input.value = '';// Clear the input field after getting the value
+
+        const listItem = document.createElement('li');  // Create a new list item element
+        const listText = document.createElement('span');// Create a new span element for the text
+        const listBtn = document.createElement('button');// Create a new button element for deleting the item
+
+        listItem.appendChild(listText); // Append the span to the list item
+        listText.textContent = myItem; // Set the text content of the span to the input value
+        listItem.appendChild(listBtn);  // Append the button to the list item
+        listBtn.textContent = 'Delete'; // Set the text content of the button to 'Delete'
+        list.appendChild(listItem); // Append the list item to the unordered list
+
+        listBtn.addEventListener('click', () => {  // Add an event listener to the delete button
+            list.removeChild(listItem); // Remove the list item from the unordered list when the button is clicked
+        });
+
+        input.focus();  //to focus the input element ready for entering the next shopping list item.
+    });
+    </script>
+</body>
+
+</html>
