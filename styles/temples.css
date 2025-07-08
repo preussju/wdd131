@@ -17,7 +17,7 @@ header{
     background-color: var(--secondary-color);
 }
 
-header p{
+header h1{
     font-family: var(--heading-font);
     font-size: 2rem;
     padding-left: 1rem;
@@ -62,16 +62,9 @@ nav a:hover {
     content: "x";
 }
 
-main h1 {
-    font-family: var(--body-font);
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
 main h2 {
     font-family: var(--body-font);
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
 }
