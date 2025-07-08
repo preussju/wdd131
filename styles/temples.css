@@ -5,11 +5,6 @@
     --secondary-color: rgb(190, 217, 204);
 }
 
-main{
-    max-width: 800px;
-    margin: 1rem auto; /* Center the content */
-}
-
 header{
     display: flex;
     justify-content: space-between;
@@ -21,23 +16,6 @@ header h1{
     font-family: var(--heading-font);
     font-size: 2rem;
     padding-left: 1rem;
-}
-
-nav {
-    font-family: var(--body-font);
-    font-size: larger;
-    font-weight: bolder;
-}
-
-nav a{
-    text-decoration: none;
-    color: black;
-    margin: 2rem;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    color: rgb(25, 45, 230);
 }
 
 /* Mobile View ***************/
@@ -54,7 +32,7 @@ nav a:hover {
     content: "≡";
 }
 
-.show li {
+.show header nav {
 	display: block;
 }
 
@@ -69,6 +47,30 @@ main h2 {
     margin-bottom: 1rem;
 }
 
+header nav {
+    display: none; /* Hide navigation links by default */
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 2rem;
+    font-family: var(--body-font);
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(25, 45, 230);
+}
+/****************/
+
+main{
+    max-width: 800px;
+    margin: 1rem auto; /* Center the content */
+}
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
