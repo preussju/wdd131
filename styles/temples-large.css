@@ -5,13 +5,16 @@
         color: #fff;
     }
 
-    nav a {
-        color: #fff;
+    .navigation a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
     }
 
-    nav a:hover {
-        text-decoration: underline;
-        color: rgb(172, 226, 186);   }
+    .navigation a:hover,
+    .navigation a:active {
+            color:white;
+            background-color: black;   }
 
     main {
         grid-template-columns: 1fr 1fr;
@@ -20,8 +23,13 @@
     .navigation {
         display: flex;
         }
-
+    
     #menu {
-        display: none;      }
+        display: none; 
+    }
+
+    .navigation li {
+        display: block; /* change state in small view */
+        flex: 1 1 100%;      }
 
 }
