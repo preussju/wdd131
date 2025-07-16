@@ -1,0 +1,44 @@
+:root{
+    --font: 'Lexend Deca', 'serif';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-family: var(--font);
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main p {
+    text-align: center;
+    padding: 10px;
+    font-family: var(--font);
+}
+
+main h2 {
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font);
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font);
+}
+
+.weather div{
+    border-top: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+.data div {
+    border-top: 3px solid rgba(165, 31, 31, 0.767);
+}

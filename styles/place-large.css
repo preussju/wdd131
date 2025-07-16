@@ -1,0 +1,56 @@
+@media screen and (min-width: 510px) {
+
+
+
+main {
+    position: relative;
+}
+
+picture img,
+picture source {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.data {
+    position: absolute;
+}
+
+.weather {
+    position: absolute;
+    left: 1000px;
+    top: 250px;
+}
+
+.weather div,
+.data div {
+    display: block;
+    padding: 1.8rem 3.5rem;
+    margin: 20px;
+    font-family: var(--font);
+    background-color: rgba(214, 221, 215, 0.575);
+}
+
+main p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+main h2 {
+    background-color: aquamarine;
+    padding: 10px;
+
+}
+
+footer {
+    position: relative;
+    color: white;
+    background-color: black;
+    top: 43rem;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font);
+}
+
+}

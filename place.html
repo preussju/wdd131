@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Place - Julia Veiga</title>
+    <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals - Julia Veiga | This website shows a place I would like to visit">
+    <meta name="author" content="Julia Veiga">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">  
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Foz do Iguaçu</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 510px)" srcset="Images/foz-larger.webp" >
+            <img src="images/foz-small.webp" alt="Foz do Iguaçu Falls" >
+        </picture>
+        <section class="data">
+            <div>
+                <h2>Data</h2>
+                <p>Area: 609,2 km² </p>
+                <p>Population: 285.415</p>
+                <p>Locations: Paraná, Brasil</p>
+                <p>Language: Portuguese</p>
+                <p>Time Zone: UTC-3</p>
+                <p>Calling Code: (55)+45</p>
+                <p>Internet TLD: .br</p>
+            </div>
+        </section>
+        <section class="weather">
+                <div>
+                <h2>Weather</h2>
+                <p>Temperature: </p>
+                <p>Conditions: </p>
+                <p>Wind: </p>
+                <p>Wind Chill: </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Julia Veiga | Foz do Iguaçu | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
