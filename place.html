@@ -19,7 +19,7 @@
     </header>
     <main>
         <picture>
-            <source media="(min-width: 510px)" srcset="Images/foz-larger.webp" >
+            <source media="(min-width: 510px)" srcset="Images/foz-large.webp" >
             <img src="images/foz-small.webp" alt="Foz do Iguaçu Falls" >
         </picture>
         <section class="data">
@@ -35,12 +35,13 @@
             </div>
         </section>
         <section class="weather">
-                <div>
-                <h2>Weather</h2>
-                <p>Temperature: </p>
-                <p>Conditions: </p>
-                <p>Wind: </p>
-                <p>Wind Chill: </p>
+            <h2>Weather</h2>
+            <div>
+                <img src="images/sun-icon.svg" class="mobile-img" alt="sunny icon">
+                <p>Temperature: 22°C</p>
+                <p>Conditions: Sunny</p>
+                <p>Wind: 5 km/h</p>
+                <p>Wind Chill: <span id="windChill"></span></p>
             </div>
         </section>
     </main>

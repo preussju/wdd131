@@ -1,16 +1,8 @@
 @media screen and (min-width: 510px) {
 
 
-
 main {
     position: relative;
-}
-
-picture img,
-picture source {
-    position: absolute;
-    width: 100%;
-    height: auto;
 }
 
 .data {
@@ -19,8 +11,14 @@ picture source {
 
 .weather {
     position: absolute;
-    left: 1000px;
-    top: 250px;
+    right:0%; 
+    top:50%;
+}
+
+.data {
+    position: absolute;
+    left: 0%;
+    top: 10px;
 }
 
 .weather div,
@@ -28,29 +26,41 @@ picture source {
     display: block;
     padding: 1.8rem 3.5rem;
     margin: 20px;
-    font-family: var(--font);
-    background-color: rgba(214, 221, 215, 0.575);
+    background-color: rgba(214, 221, 215, 0.623);
+    padding-top: 60px;
 }
 
 main p {
-    text-align: center;
     padding-top: 15px;
 }
 
 main h2 {
-    background-color: aquamarine;
-    padding: 10px;
-
+    background-color: rgba(22, 51, 33, 0.863);
+    color: white;
+    position: absolute;
+    left: 10px;
 }
 
-footer {
-    position: relative;
-    color: white;
-    background-color: black;
-    top: 43rem;
-    padding: 20px;
-    text-align: center;
-    font-family: var(--font);
+.data div {
+    border-top: none;
+}
+
+.data h2{
+    bottom: 360px;
+    padding-left: 140px;
+}
+
+.weather h2{
+    bottom: 230px;
+    padding-left: 70px;
+}
+
+.weather h2::after {
+    content: "  ☀️";
+}
+
+.mobile-img {
+    display: none;
 }
 
 }

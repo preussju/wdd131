@@ -1,5 +1,7 @@
 :root{
     --font: 'Lexend Deca', 'serif';
+    --primary-color: rgb(7, 18, 48);
+    --secondary-color: #000000;
 }
 
 *{
@@ -9,10 +11,17 @@
 
 header h1 {
     font-family: var(--font);
-    background-color: black;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+picture img,
+picture source {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 main p {
@@ -29,16 +38,23 @@ main h2 {
 
 footer {
     color: white;
-    background-color: black;
+    background-color: var(--primary-color);
     padding: 20px;
     text-align: center;
     font-family: var(--font);
 }
 
-.weather div{
+.weather h2{
     border-top: 1px solid rgba(0, 0, 0, 0.103);
 }
 
 .data div {
-    border-top: 3px solid rgba(165, 31, 31, 0.767);
+    border-top: 20px solid rgba(22, 51, 33, 0.863);
+    padding-bottom: 20px;
+}
+
+.mobile-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
 }
