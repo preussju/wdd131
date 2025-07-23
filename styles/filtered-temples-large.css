@@ -1,0 +1,40 @@
+@media screen and (min-width: 800px) {
+
+        h1 {
+            font-family: var(--heading-font);
+            font-size: 2.5rem;
+        }
+
+        header{
+            display: flex;
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        #menu {
+            display: none;
+            /* hide hamburger button */
+        }
+
+        .navigation {
+            flex-direction: row;
+            background-color: var(--primary-color);
+        }
+
+        .navigation a {
+            display: block;
+            padding: 2rem;
+            font-family: var(--body-font);
+            font-size: larger;
+        }
+
+        footer{
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+}
