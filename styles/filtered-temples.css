@@ -83,6 +83,38 @@ nav {
 
 /******************/
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+    padding: 15px;
+}
+
+.container section{
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+.container h3{
+    font-family: var(--body-font);
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.container .label{
+    font-family: var(--body-font);
+}
+
+.container p{
+    text-align: left;
+    font-family: serif;
+}
+
+.container img{
+    padding-top: 20px;
+}
+
 footer{
     text-align: center;
     font-family: var(--body-font);
@@ -90,3 +122,4 @@ footer{
     color:black;
     padding: .5rem;
 }
+
