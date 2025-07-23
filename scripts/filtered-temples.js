@@ -112,10 +112,11 @@ const temples = [
 
 ];
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard() {
-    temples.forEach(temple => {
+function createTempleCard(filteredTemples) {
+    document.querySelector(".container").innerHTML = "";
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section")
         let name = document.createElement("h3")
         let location = document.createElement("p")
@@ -142,3 +143,35 @@ function createTempleCard() {
         document.querySelector(".container").appendChild(card);
     })
 }
+
+const oldLink = document.querySelector("#old");
+const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
+const homeLink = document.querySelector("#home");
+
+homeLink.addEventListener("click", () => {
+    createTempleCard(temples)
+})
+
+oldLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => {
+        const date = new Date(temple.dedicated);
+        return date.getFullYear() < 1900;
+    }));
+});
+
+newLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => {
+        const date = new Date(temple.dedicated);
+        return date.getFullYear() > 2000;
+    }));
+});
+
+smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area<10000));
+});
+
+largeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area >90000));
+});
