@@ -45,6 +45,7 @@ h1{
 
 .wf1 input[type="date"],
 .wf1 input[type="text"], 
+.wf1 input[type="textarea"],
 select 
 {
     display: block;
@@ -59,10 +60,6 @@ select
 
 .wf1 input[type="checkbox"] {
     margin-right: 6px;
-}
-
-#review{
-    padding-bottom: 10%;
 }
 
 .radios{
