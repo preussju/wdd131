@@ -1,0 +1,75 @@
+@media screen and (min-width: 700px) 
+{
+
+#menu {
+    display: none;
+    /* hide hamburger button */
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+    
+.navigation a {
+    text-decoration: none;
+    font-family: var(--header-font);
+    font-size: 2.1rem;
+    padding: 20px;
+    color: white;
+}
+    
+nav a:hover {
+    background-color: rgba(211, 211, 211, 0.199);
+}
+    
+    
+header img {
+    border-bottom: 3px solid var(--primary-color);
+}
+    
+.title {
+    top: 30%;
+    font-size: 4.5rem;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 940px;
+    gap: 50px;
+}
+
+/* form */
+
+.form-section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--secondary-color);
+    padding-bottom: 30px;
+    margin: 50px auto;
+}
+
+/* tales */
+
+.tales-container img {
+    float: right;
+}
+
+/* footer styles */
+footer {
+    display: flex;
+    padding: 20px;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+
+footer nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+}
