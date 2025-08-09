@@ -251,6 +251,11 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-gap: 50px;
     padding: 30px;
+
+}
+
+.tales-container section{
+    margin-right:20%;
 }
 
 .tales-container h2{
@@ -264,7 +269,6 @@ button:hover {
 }
 
 .tales-container img{
-    margin-left: 20px;
     margin-bottom: 20px;
     border: 2px solid var(--primary-color);
 }
@@ -273,7 +277,7 @@ button:hover {
     padding: 20px;
     margin-top: 50px;
     max-width: 300px;
-    background-color: rgba(54, 110, 62, 0.096);
+    background-color: rgba(54, 110, 62, 0.096);    
 }
 
 .tales .intro{

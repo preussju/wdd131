@@ -57,7 +57,12 @@ header img {
 /* tales */
 
 .tales-container img {
+    margin-left: 20px;
     float: right;
+}
+
+.tales-container section {
+    margin-right: 0;
 }
 
 .tales section {
