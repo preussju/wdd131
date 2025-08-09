@@ -60,6 +60,10 @@ header img {
     float: right;
 }
 
+.tales section {
+    max-width: 980px;
+}
+
 /* footer styles */
 footer {
     display: flex;
