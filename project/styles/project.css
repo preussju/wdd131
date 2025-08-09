@@ -20,6 +20,7 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
+    color: white;
 }
 
 #menu::before {
@@ -27,7 +28,15 @@
 }
 
 #menu.open::before {
-    content: "❌";
+    content: "×";
+}
+
+#menu:hover{
+    color: var(--secondary-color);
+}
+
+.navigation li {
+    padding: 13px;
 }
 
 .navigation {
@@ -42,10 +51,9 @@
 .navigation a {
     display: none;
     padding: 1rem;
-    text-align: center;
     text-decoration: none;
     font-family: var(--body-font);
-    color: #fff;
+    color: white;
 }
 
 .navigation a:hover {
@@ -59,6 +67,7 @@
 }
 
 /******************/
+
 header img {
     position: relative;
     max-width: 100%;
@@ -67,7 +76,7 @@ header img {
 .title{
     position: absolute;
     left: 52%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
     font-family: var(--header-second-font);
     font-size: 5rem;
@@ -218,9 +227,22 @@ button:hover {
 
 /* tales page styles */
 
-.navigation li{
+.navigation-tales{
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.navigation-tales li{
     list-style-type: none;
-    padding: 10px;
+}
+
+.navigation-tales a{
+    text-decoration: none;
+    font-family: var(--header-font);
+    font-size: 1.8rem;
+    color: white;
 }
 
 .tales-container {
@@ -283,6 +305,14 @@ button:hover {
     font-family: var(--header-font);
     font-size: larger;
     border: 2px solid var(--primary-color);
+}
+
+/* references */
+
+.references p{
+    text-align: center;
+    font-family: var(--body-font);
+    line-height: 2rem;
 }
 
 /* footer styles */
