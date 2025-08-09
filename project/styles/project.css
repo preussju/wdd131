@@ -248,7 +248,7 @@ button:hover {
 
 .tales-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-gap: 50px;
     padding: 30px;
 }
@@ -272,6 +272,7 @@ button:hover {
 .tales section {
     padding: 20px;
     margin-top: 50px;
+    max-width: 300px;
     background-color: rgba(54, 110, 62, 0.096);
 }
 
