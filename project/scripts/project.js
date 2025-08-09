@@ -164,4 +164,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+    const emailForm = document.getElementById('.subscribe-form');
+    const emailInput = document.getElementById('email');
+
+    emailForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent page reload
+        const email = emailInput.value.trim();
+        if (email) {
+            localStorage.setItem('userEmail', email);
+        }
+    });
+
+
 });
